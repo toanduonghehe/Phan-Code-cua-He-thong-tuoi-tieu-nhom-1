@@ -12,26 +12,27 @@ int main(){
     scanf("%f",&doamdat);
     printf("do am cua khong khi(%) la: ");
     scanf("%f",&doamkk);
-    printf("nhiet do cua dat (°C) la: ");
+    printf("nhiet do cua dat (Â°C) la: ");
     scanf("%f",&nhietdo);
     if (doamdat < 0 || doamdat > 100 || doamkk < 0 || doamkk > 100 || nhietdo < -10 || nhietdo > 60) {
-            printf("?? Du lieu khong hop le!\n");
+            printf(" Du lieu khong hop le!\n");
             continue;
         }
-    printf("\n Ket qua phan tich??:\n");
-    if(doamkk>80){
-        printf("troi mua??? -> he thong tat bom \n ");}
+    printf("\n Ket qua phan tich:\n");
+    if(doamdat>80){
+        printf("troi mua -> he thong tat bom \n ");}
         else if(nhietdo>=30 && doamkk>50 && doamdat<40){
-            printf("troi nang?? -> he thong bat bom trong 5s \n");
+            printf("troi nang -> he thong bat bom trong 5s \n");
             sleep(5);
         }
         else if(doamdat<35 ){
-printf("troi ram?? -> he thong bat bom trong 5s \n ");
+printf("troi ram -> he thong bat bom trong 5s \n ");
 sleep(5);
     }else {
-        printf("dat du am?? -> tat bom?? \n");
+        printf("dat du am -> tat bom?? \n");
         sleep(10);
-        printf("\nHe Thong Bat??\n");
+        printf("\nHe Thong Bat\n");
         continue;
         
     }}}
+
