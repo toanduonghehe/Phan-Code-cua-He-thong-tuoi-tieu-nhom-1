@@ -31,10 +31,12 @@
 	scanf("%f", &d.doamdat);
 	printf("\nNhap do am khong khi ( % ): ");
 	scanf("%f", &d.doamkk);
-	printf("\nNhap nhiet do (°C): ");
+	printf("\nNhap nhiet do (Â°C): ");
 	scanf("%f", &d.nhietdo);
 	Dieukhienbom(d);
-	return 0;}
+	}
+	return 0;
 	}
 	
+
 
